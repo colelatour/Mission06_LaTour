@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission06_LaTour.Models;
 
@@ -6,10 +7,11 @@ public class Collection
 {
     [Key]
     [Required]
-    public int MovieID { get; set; }
+    public int MovieId { get; set; }
     
+    [ForeignKey("CategoryID")]
     [Required]
-    public string Category { get; set; }
+    public int CategoryId { get; set; }
     
     [Required]
     public string Title { get; set; }
@@ -26,6 +28,8 @@ public class Collection
     public bool? Edited { get; set; }
 
     public string? LentTo { get; set; }
+    
+    public int? CopiedToPlex { get; set; }
 
     public string? Notes { get; set; }
 

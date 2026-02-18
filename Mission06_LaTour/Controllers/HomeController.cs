@@ -35,5 +35,15 @@ public class HomeController : Controller
         
         return View("Confirmation", response);
     }
+
+    [HttpGet]
+    public IActionResult MovieCollection2()
+    {
+        ViewBag.Categories = _context.Categories
+            .OrderBy(x => c.CategoryName)
+            .ToList();
+        
+        return View("MovieCollection");
+    }
         
 }
