@@ -212,3 +212,4 @@
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/sw4r6wcjl9-{0}-bot2ubceav-bot2ubceav.gz
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/ut0emenb33-{0}-s10gkqrsxi-s10gkqrsxi.gz
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/v49r0vswav-{0}-s10gkqrsxi-s10gkqrsxi.gz
+/Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/Mission06_LaTour.sourcelink.json
