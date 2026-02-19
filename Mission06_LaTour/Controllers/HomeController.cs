@@ -46,6 +46,14 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult MovieCollection(Collection response)
     {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(c => c.CategoryName)
+                .ToList();
+            return View("MovieCollection", response);
+        }
+
         _context.Collections.Add(response);
         _context.SaveChanges();
         
@@ -67,6 +75,14 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Edit(Collection updatedInfo)
     {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(c => c.CategoryName)
+                .ToList();
+            return View("MovieCollection", updatedInfo);
+        }
+
         _context.Update(updatedInfo);
         _context.SaveChanges();
         

@@ -40,9 +40,9 @@
                     <td>@c.Year</td>
                     <td>@(string.IsNullOrWhiteSpace(c.Director) ? "Unknown" : c.Director)</td>
                     <td>@(string.IsNullOrWhiteSpace(c.Rating) ? "Unrated" : c.Rating)</td>
-                    <td>@(c.Edited ? "Yes" : "No")</td>
+                    <td>@(c.Edited == true ? "Yes" : "No")</td>
                     <td>@(string.IsNullOrWhiteSpace(c.LentTo) ? "-" : c.LentTo)</td>
-                    <td>@(c.CopiedToPlex == 1 ? "Yes" : "No")</td>
+                    <td>@(c.CopiedToPlex == true ? "Yes" : "No")</td>
                     <td>@(string.IsNullOrWhiteSpace(c.Notes) ? "-" : c.Notes)</td>
                     <td><a class="btn btn-info btn-sm" asp-controller="Home" asp-action="Edit" asp-route-id="@c.MovieId">Edit</a></td>
                     <td><a class="btn btn-danger btn-sm" asp-controller="Home" asp-action="Delete" asp-route-id="@c.MovieId">Delete</a></td>

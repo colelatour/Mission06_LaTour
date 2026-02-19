@@ -142,6 +142,20 @@ img {
   transform: translateY(0);
 }
 
+.movie-form .validation-summary {
+  grid-column: 1 / -1;
+  color: #b42318;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.movie-form .field-validation {
+  grid-column: 2;
+  color: #b42318;
+  font-size: 0.88rem;
+  margin-top: -8px;
+}
+
 .movie-table {
   width: 100%;
   border-collapse: collapse;
@@ -224,6 +238,11 @@ img {
   .movie-form button[type="submit"], .movie-form .btn {
     justify-self: stretch;
     text-align: center;
+  }
+
+  .movie-form .field-validation {
+    grid-column: 1;
+    margin-top: -4px;
   }
 
   .movie-table th,
