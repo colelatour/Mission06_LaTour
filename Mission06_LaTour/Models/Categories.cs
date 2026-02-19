@@ -7,7 +7,8 @@ public class Categories
 {
     [Key]
     [Required]
-    public int CategoryID { get; set; }
+    public int CategoryId { get; set; }
     
-    public string CategoryName { get; set; }
+    [Required]
+    public string CategoryName { get; set; } = string.Empty;
 }

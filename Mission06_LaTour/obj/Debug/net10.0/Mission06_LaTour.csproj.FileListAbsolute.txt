@@ -209,7 +209,7 @@
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/Mission06_LaTour.csproj.AssemblyReference.cache
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/Mission0.171984A9.Up2Date
-/Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/sw4r6wcjl9-{0}-bot2ubceav-bot2ubceav.gz
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/ut0emenb33-{0}-s10gkqrsxi-s10gkqrsxi.gz
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/v49r0vswav-{0}-s10gkqrsxi-s10gkqrsxi.gz
 /Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/Mission06_LaTour.sourcelink.json
+/Users/colelatour/RiderProjects/Mission06_LaTour/Mission06_LaTour/obj/Debug/net10.0/compressed/sw4r6wcjl9-{0}-07vxsp5jl7-07vxsp5jl7.gz

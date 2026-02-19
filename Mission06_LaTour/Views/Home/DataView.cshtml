@@ -1,17 +1,54 @@
-@model Collection
+@model List<Collection>
 
 @{
 }
 
-<table>
+<h1 class="mb-3">Movie Collection Data View</h1>
+
+<div class="movie-table-wrap">
+    <table class="movie-table">
         <thead>
-                <td>Title</td>
-                <td>Year</td>
-                <td>Director/td>
-                <td>Rating</td>
-                <td>Edited</td>
-                <td>Lent To</td>
-                <td>Copied to Plex</td>
-                <td>Notes</td>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Category</th>
+            <th scope="col">Year</th>
+            <th scope="col">Director</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Edited</th>
+            <th scope="col">Lent To</th>
+            <th scope="col">Copied to Plex</th>
+            <th scope="col">Notes</th>
+            <th scope="col" class="action-col">Edit</th>
+            <th scope="col" class="action-col">Delete</th>
+        </tr>
         </thead>
-</table>
+
+        <tbody>
+        @if (Model.Count == 0)
+        {
+            <tr>
+                <td colspan="11">No movies have been added yet.</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Title</td>
+                    <td>@c.Category?.CategoryName</td>
+                    <td>@c.Year</td>
+                    <td>@(string.IsNullOrWhiteSpace(c.Director) ? "Unknown" : c.Director)</td>
+                    <td>@(string.IsNullOrWhiteSpace(c.Rating) ? "Unrated" : c.Rating)</td>
+                    <td>@(c.Edited ? "Yes" : "No")</td>
+                    <td>@(string.IsNullOrWhiteSpace(c.LentTo) ? "-" : c.LentTo)</td>
+                    <td>@(c.CopiedToPlex == 1 ? "Yes" : "No")</td>
+                    <td>@(string.IsNullOrWhiteSpace(c.Notes) ? "-" : c.Notes)</td>
+                    <td><a class="btn btn-info btn-sm" asp-controller="Home" asp-action="Edit" asp-route-id="@c.MovieId">Edit</a></td>
+                    <td><a class="btn btn-danger btn-sm" asp-controller="Home" asp-action="Delete" asp-route-id="@c.MovieId">Delete</a></td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+</div>
